@@ -2944,7 +2944,7 @@ input, select, textarea {
 		position: relative;
 	}
 
-		.spotlight:nth-last-of-type(1) {
+		/*.spotlight:nth-last-of-type(1) {
 			z-index: 1;
 		}
 
@@ -3022,7 +3022,7 @@ input, select, textarea {
 
 		.spotlight:nth-last-of-type(20) {
 			z-index: 20;
-		}
+		}*/
 
 		.spotlight:before {
 			background-image: url("images/overlay.png");
@@ -3419,8 +3419,8 @@ input, select, textarea {
 
 	#banner {
 		background-attachment: fixed;
-		background-color: #272833;
-		background-image: url("../../images/python.png");
+		/*background-color: #272833;*/
+		/*background-image: url("../../images/python.png");*/
 		background-position: center center;
 		background-size: cover;
 		box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
@@ -4069,3 +4069,8 @@ input, select, textarea {
 					}
 
 	}
+
+
+.noparticles{
+	z-index: 50;
+}		

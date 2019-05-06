@@ -10,7 +10,11 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/particles.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+		<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
 	</head>
 	<body class="is-preload landing">
 		<div id="page-wrapper">
@@ -48,19 +52,137 @@
 
 			<!-- Banner -->
 				<section id="banner">
-					<div class="content">
-						<header>
-							<h2>SeroData</h2>
-							<p>Toma de decisiones automáticas gracias a la Intelogencia Artificial<br />
-							"Deja que el Machine Learning piense por ti"</p>
-						</header>
-						<span class="image"><img src="images/logo/logocarlos.png" alt="" /></span>
-					</div>
-					<a href="#one" class="goto-next scrolly">Next</a>
+						
+						<div class="content">
+								<header>
+									<h2>SeroData</h2>
+									<p>Toma de decisiones automáticas gracias a la Intelogencia Artificial<br />
+									"Deja que el Machine Learning piense por ti"</p>
+								</header>
+								<span class="image" ><img src="images/logo/logocarlos.png" alt="" style="z-index: 60" /></span>
+						</div>
+						<div id="particles-js">
+							
+						</div>
+						<script>
+							// particlesJS("particles-js","assests/js/particlesjs-config.json");
+							particlesJS("particles-js", {
+											    "particles": {
+											        "number": {
+											            "value": 80,
+											            "density": {
+											                "enable": true,
+											                "value_area": 800
+											            }
+											        },
+											        "color": {
+											            "value": "#000000"
+											        },
+											        "shape": {
+											            "type": "circle",
+											            "stroke": {
+											                "width": 0,
+											                "color": "#000000"
+											            },
+											            "polygon": {
+											                "nb_sides": 5
+											            },
+											            "image": {
+											                "src": "img/github.svg",
+											                "width": 100,
+											                "height": 100
+											            }
+											        },
+											        "opacity": {
+											            "value": 0.5,
+											            "random": false,
+											            "anim": {
+											                "enable": false,
+											                "speed": 1,
+											                "opacity_min": 0.1,
+											                "sync": false
+											            }
+											        },
+											        "size": {
+											            "value": 3,
+											            "random": true,
+											            "anim": {
+											                "enable": false,
+											                "speed": 40,
+											                "size_min": 0.1,
+											                "sync": false
+											            }
+											        },
+											        "line_linked": {
+											            "enable": true,
+											            "distance": 150,
+											            "color": "#ffffff",
+											            "opacity": 0.4,
+											            "width": 1
+											        },
+											        "move": {
+											            "enable": true,
+											            "speed": 6,
+											            "direction": "none",
+											            "random": false,
+											            "straight": false,
+											            "out_mode": "out",
+											            "bounce": false,
+											            "attract": {
+											                "enable": false,
+											                "rotateX": 600,
+											                "rotateY": 1200
+											            }
+											        }
+											    },
+											    "interactivity": {
+											        "detect_on": "canvas",
+											        "events": {
+											            "onhover": {
+											                "enable": true,
+											                "mode": "grab"
+											            },
+											            "onclick": {
+											                "enable": true,
+											                "mode": "push"
+											            },
+											            "resize": true
+											        },
+											        "modes": {
+											            "grab": {
+											                "distance": 101.01010101010105,
+											                "line_linked": {
+											                    "opacity": 0.3412969283276449
+											                }
+											            },
+											            "bubble": {
+											                "distance": 400,
+											                "size": 40,
+											                "duration": 2,
+											                "opacity": 8,
+											                "speed": 3
+											            },
+											            "repulse": {
+											                "distance": 200,
+											                "duration": 0.4
+											            },
+											            "push": {
+											                "particles_nb": 4
+											            },
+											            "remove": {
+											                "particles_nb": 2
+											            }
+											        }
+											    },
+											    "retina_detect": true
+											});
+						</script>
+						<a href="#one" class="goto-next scrolly" style="z-index: 31">Next</a>
+					
 				</section>
 
 			<!-- One -->
-				<section id="one" class="spotlight style2 bottom">
+				<section id="one" class="noparticles spotlight style2 bottom ">
 					<span class="image fit main"><img src="images/ML3.jpg" alt="" /></span>
 					<div class="content">
 						<div class="container">
@@ -90,7 +212,7 @@
 				</section>
 
 			<!-- Two -->
-				<section id="two" class="spotlight style2 right">
+				<section id="two" class="noparticles spotlight style2 right">
 					<span class="image fit main"><img src="images/ML1.jpg" alt="" /></span>
 					<div class="content">
 						<header>
@@ -107,7 +229,7 @@
 				</section>
 
 			<!-- Three -->
-				<section id="three" class="spotlight style2 left">
+				<section id="three" class="noparticles spotlight style2 left">
 					<span class="image fit main bottom"><img src="images/ML4.jpg" alt="" /></span>
 					<div class="content">
 						<header>
@@ -124,7 +246,7 @@
 				
 
 			<!-- Four -->
-				<section id="four" class="wrapper style1 special fade-up">
+				<section id="four" class="noparticles wrapper style1 special fade-up">
 					<div class="container">
 						<header class="major">
 							<h2>¿Todavía no usas la Inteligencia Artificial en tu negocio?</h2>
@@ -166,7 +288,7 @@
 							-->
 							</div>
 						</div>
-						<footer class="major">
+						<footer class="noparticles major">
 							<ul class="actions special">
 								<li><a href="#" class="button">Actualización de mi empresa al Siglo XXI</a></li>
 							</ul>
